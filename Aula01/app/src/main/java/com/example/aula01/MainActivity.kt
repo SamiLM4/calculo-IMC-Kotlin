@@ -1,4 +1,4 @@
-    package com.example.aula01
+package com.example.aula01
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -31,18 +31,18 @@ import android.widget.TextView
                 if (imc < 18.5) {
                     classificacao = "Baixo Peso"
                 } else if (imc < 24.9) {
-                    classificacao = "eutrofia (peso adequado)"
+                    classificacao = "Eutrofia (peso adequado)"
                 }else if (imc < 34.9) {
-                    classificacao = "obesidade grau 1"
+                    classificacao = "Obesidade grau 1"
                 }else if (imc < 39.9) {
-                    classificacao = "obesidade grau 2"
+                    classificacao = "Obesidade grau 2"
                 }else {
                     classificacao = "Obesidade extrema"
                 }
                 IMCTextView.text = "IMC: %.2f".format(imc)
                 textViewClass.text = classificacao
             } else {
-                IMCTextView.text = "NULL"
+                IMCTextView.text = "Valores inválidos"
             }
 
 
