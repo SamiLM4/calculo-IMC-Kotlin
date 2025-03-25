@@ -26,7 +26,7 @@ import android.widget.TextView
             val peso = pesoEditText.text.toString().toFloatOrNull()
             val altura = alturaEditText.text.toString().toFloatOrNull()
 
-            if (peso != null && altura != null){
+            if (peso != null && peso < 0 && altura != null && altura < 0){
                 var imc:Float = peso / (altura*altura)
                 if (imc < 18.5) {
                     classificacao = "Baixo Peso"
